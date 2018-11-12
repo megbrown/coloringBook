@@ -1,5 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
-	let colors = ['red', 'blue', 'green'];
+
+	let colors = {
+		'82': {
+			color: 'red',
+			label: 'R'
+		},
+		'66': {
+			color: 'blue',
+			label: 'B'
+		},
+		'71': {
+			color: 'green',
+			label: 'G'
+		}
+	}
+
 	let shapes = document.querySelectorAll('div.shape');
 	let targetElement;
 
@@ -9,13 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
 		})
 	}
 
-	function removeColors(colorToKeep) {
-		colors.forEach(function(color) {
-			if (color !== colorToKeep) {
-				targetElement.classList.remove(color);
-			}
-		})
-
+	function removeColors() {
+		Object.keys(colors).forEach(function(colorKey) {
+				targetElement.classList.remove(colors[colorKey]['color']);
+		});
 	}
 
 	shapes.forEach(function(shape) {
@@ -28,16 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	window.addEventListener('keydown', function(e) {
 		if (targetElement) {
-		if (e.keyCode === 82) {
-				removeColors('red');
-				targetElement.classList.add('red');
-			} else if (e.keyCode === 66) {
-				removeColors('blue');
-				targetElement.classList.add('blue');
-			} else if (e.keyCode === 71) {
-				removeColors('green');
-				targetElement.classList.add('green');
-			}
+			removeColors();
+			targetElement.classList.add(colors[e.keyCode]['color']);
 		}
 	});
 
