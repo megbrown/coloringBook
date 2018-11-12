@@ -1,0 +1,55 @@
+body {
+	height: 100%;
+	width: 100%;
+}
+.shape-container {
+	display: block;
+	width: 706px;
+	margin: 50px auto;
+}
+.square1 {
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	border: 1px solid grey;
+	margin-right: 45px;
+}
+.circle {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 45px;
+}
+.square2 {
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	border: 1px solid grey;
+}
+
+.swatch-container {
+	display: block;
+	width: 170px;
+	margin: 0px auto;
+}
+.swatch {
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+}
+.red {
+	background-color: red;
+}
+.blue {
+	background-color: blue;
+}
+.green {
+	background-color: green;
+}
+.highlight {
+	border: 2px solid black;
+}
