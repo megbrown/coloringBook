@@ -55,6 +55,42 @@ body {
 .green {
 	background-color: green;
 }
+.maroon {
+	background-color: maroon;
+}
+.orange {
+	background-color: orange;
+}
+.yellow {
+	background-color: yellow;
+}
+.olive {
+	background-color: olive;
+}
+.purple {
+	background-color: purple;
+}
+.fuchsia {
+	background-color: fuchsia;
+}
+.lime {
+	background-color: lime;
+}
+.teal {
+	background-color: teal;
+}
+.aqua {
+	background-color: aqua;
+}
+.navy {
+	background-color: navy;
+}
+.black {
+	background-color: black;
+}
+.silver {
+	background-color: silver;
+}
 .highlight {
 	border: 2px solid black;
 }

@@ -1,22 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-	let colors = {
-		'82': {
-			color: 'red',
-			label: 'R'
-		},
-		'66': {
-			color: 'blue',
-			label: 'B'
-		},
-		'71': {
-			color: 'green',
-			label: 'G'
-		}
-	}
-
 	let shapes = document.querySelectorAll('div.shape');
 	let targetElement;
+
+	let colors = colorObj.colors;
+
+	Object.keys(colors).forEach(function(colorKey) {
+		let container = document.querySelector('.swatch-container');
+		let colorElement = document.createElement('span');
+		colorElement.classList.add(colors[colorKey]['color'], 'swatch')
+		colorElement.innerHTML = colors[colorKey]['label'];
+		container.appendChild(colorElement);
+	});
 
 	function removeHighlights() {
 		shapes.forEach(function(shape) {
