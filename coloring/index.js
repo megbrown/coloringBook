@@ -5,12 +5,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	let colors = colorObj.colors;
 
-	Object.keys(colors).forEach(function(colorKey) {
-		let container = document.querySelector('.swatch-container');
+	let count = Object.keys(colors).length;
+
+	Object.keys(colors).forEach(function(colorKey, index) {
+		let containerLeft = document.querySelector('.swatch-container-left');
+		let containerRight = document.querySelector('.swatch-container-right');
+
 		let colorElement = document.createElement('span');
 		colorElement.classList.add(colors[colorKey]['color'], 'swatch')
 		colorElement.innerHTML = colors[colorKey]['label'];
-		container.appendChild(colorElement);
+
+		if (index < count/2) {
+			containerLeft.appendChild(colorElement);
+		} else {
+			containerRight.appendChild(colorElement);
+		}
+
 	});
 
 	function removeHighlights() {
@@ -36,7 +46,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	window.addEventListener('keydown', function(e) {
 		if (targetElement) {
 			removeColors();
-			targetElement.classList.add(colors[e.keyCode]['color']);
+			if (colors[e.keyCode]) {
+				targetElement.classList.add(colors[e.keyCode]['color']);
+			}
 		}
 	});
 

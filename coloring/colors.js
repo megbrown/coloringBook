@@ -59,6 +59,10 @@ let colorObj = {
 		'83': {
 			'color': 'silver',
 			'label': 'S'
+		},
+		'68': {
+			'color': 'goldenrod',
+			'label': 'D'
 		}
 	}
 }
