@@ -2,14 +2,7 @@ body {
 	height: 100%;
 	width: 100%;
 }
-.illustration-container {
-	position: absolute;
-	top: 10px;
-	left: 10px;
-	bottom: 10px;
-	right: 275px;
-}
-.square1 {
+/*.square1 {
 	display: inline-block;
 	height: 100px;
 	width: 100px;
@@ -29,10 +22,102 @@ body {
 	height: 100px;
 	width: 100px;
 	border: 1px solid grey;
+}*/
+
+#background {
+	position: relative;
+	background-color: #ededed;
+	width: 600px;
+	height: 476px;
+	border-bottom: 50px solid #a8a8a8;
+	margin: 0 auto;
 }
+
+#flower {
+	position: absolute;
+	top: 25px;
+	left: 110px;
+	width: 258px;
+}
+
+.petal {
+	background-color: #d3d3d3;
+	float: left;
+	margin: 1px 1px 0 0;
+	width: 125px;
+	height: 125px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+}
+
+#topleft {
+	-moz-border-radius-bottomright: 0;
+	-webkit-border-bottom-right-radius: 0;
+}
+
+#topright {
+	-moz-border-radius-bottomleft: 0;
+	-webkit-border-bottom-left-radius: 0;
+}
+
+#bottomleft {
+	-moz-border-radius-topright: 0;
+	-webkit-border-top-right-radius: 0;
+}
+
+#bottomright {
+	-moz-border-radius-topleft: 0;
+	-webkit-border-top-left-radius: 0;
+}
+
+#center {
+	position: absolute;
+	left: 102px;
+	top: 102px;
+	background-color: #f6f6f6;
+	width: 50px;
+	height: 50px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+}
+
+#stem {
+	float: left;
+	width: 12px;
+	height: 200px;
+	margin: 1 1px;
+	background-color: #a8a8a8;
+}
+
+.leaf {
+	float: left;
+	margin-top: 80px;
+	background-color: #a8a8a8;
+	width: 80px;
+	height: 40px;
+}
+
+#leftleaf {
+	clear: left;
+	margin-left: 10px;
+	margin-top: 70px;
+	-moz-border-radius-bottomleft: 30px;
+	-webkit-border-bottom-left-radius: 30px;
+	-moz-border-radius-topright: 30px;
+	-webkit-border-top-right-radius: 30px;
+}
+
+#rightleaf {
+	margin-top: 90px;
+	-moz-border-radius-bottomright: 30px;
+	-webkit-border-bottom-right-radius: 30px;
+	-moz-border-radius-topleft: 30px;
+	-webkit-border-top-left-radius: 30px;
+}
+
 .swatch-container {
 	position: absolute;
-	width: 160px;
+	width: 120px;
 	top: 10px;
 	bottom: 10px;
 	right: 10px;
@@ -41,73 +126,73 @@ body {
 }
 .swatch-container-left {
 	position: absolute;
-	width: 80px;
+	width: 60px;
 	top: 0px;
 	left: 0px;
 	height: 100%;
 }
 .swatch-container-right {
 	position: absolute;
-	width: 80px;
+	width: 60px;
 	top: 0px;
 	right: 0px;
 	height: 100%;
 }
 .swatch {
-	padding: 20px 0;
+	padding: 18px 0;
 	display: block;
 	color: white;
 	text-align: center;
 	margin: 0px auto;
 }
 .red {
-	background-color: red;
+	background-color: red !important;
 }
 .blue {
-	background-color: blue;
+	background-color: blue !important;
 }
 .green {
-	background-color: green;
+	background-color: green !important;
 }
 .maroon {
-	background-color: maroon;
+	background-color: maroon !important;
 }
 .orange {
-	background-color: orange;
+	background-color: orange !important;
 }
 .yellow {
-	background-color: yellow;
+	background-color: yellow !important;
 }
 .olive {
-	background-color: olive;
+	background-color: olive !important;
 }
 .purple {
-	background-color: purple;
+	background-color: purple !important;
 }
 .fuchsia {
-	background-color: fuchsia;
+	background-color: fuchsia !important;
 }
 .lime {
-	background-color: lime;
+	background-color: lime !important;
 }
 .teal {
-	background-color: teal;
+	background-color: teal !important;
 }
 .aqua {
-	background-color: aqua;
+	background-color: aqua !important;
 }
 .navy {
-	background-color: navy;
+	background-color: navy !important;
 }
 .black {
-	background-color: black;
+	background-color: black !important;
 }
 .silver {
-	background-color: silver;
+	background-color: silver !important;
 }
 .goldenrod {
-	background-color: goldenrod;
+	background-color: goldenrod !important;
 }
 .highlight {
-	border: 2px solid black;
+	border: 1px solid black !important;
 }
